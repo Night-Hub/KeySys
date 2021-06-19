@@ -1,0 +1,231 @@
+warn("Key System Made By WetWipes :)")
+print("")
+print("")
+print("------------------------------------------------------------")
+warn("Key System Loading Started!")
+print("------------------------------------------------------------")
+print("")
+local ScreenGuiOne = Instance.new("ScreenGui")
+local BackFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local GalaxyBackground = Instance.new("ImageLabel")
+local MainFrame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local EnterKey = Instance.new("TextBox")
+local TitleBackground = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Login = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+ScreenGuiOne.Name = "ScreenGuiOne"
+ScreenGuiOne.Parent = game.CoreGui
+
+BackFrame.Name = "BackFrame"
+BackFrame.Parent = ScreenGuiOne
+BackFrame.BackgroundColor3 = Color3.fromRGB(212, 0, 0)
+BackFrame.Position = UDim2.new(0.5, 0, 0.25, 0)
+BackFrame.Size = UDim2.new(0, 309, 0, 347)
+
+UICorner.CornerRadius = UDim.new(0, 28)
+UICorner.Parent = BackFrame
+
+GalaxyBackground.Name = "GalaxyBackground"
+GalaxyBackground.Parent = BackFrame
+GalaxyBackground.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+GalaxyBackground.ClipsDescendants = true
+GalaxyBackground.Position = UDim2.new(0.0128043862, 0, 0.00975679979, 0)
+GalaxyBackground.Size = UDim2.new(0, 301, 0, 340)
+GalaxyBackground.SizeConstraint = Enum.SizeConstraint.RelativeYY
+GalaxyBackground.ImageColor3 = Color3.fromRGB(83, 83, 83)
+GalaxyBackground.ScaleType = Enum.ScaleType.Crop
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = GalaxyBackground
+MainFrame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.101929747, 0, 0.0631949008, 0)
+MainFrame.Size = UDim2.new(0, 247, 0, 297)
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(-0.0971659943, 0, -0.0392397493, 0)
+ScrollingFrame.Size = UDim2.new(0, 284, 0, 321)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0693380833, 0, 0.040884213, 0)
+TextLabel.Size = UDim2.new(0, 232, 0, 165)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Get The Key From The Discord!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 28.000
+TextLabel.TextWrapped = true
+
+EnterKey.Name = "EnterKey"
+EnterKey.Parent = ScrollingFrame
+EnterKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnterKey.BackgroundTransparency = 0.850
+EnterKey.Position = UDim2.new(0.00985051598, 0, 0.427239181, 0)
+EnterKey.Size = UDim2.new(0, 265, 0, 34)
+EnterKey.Font = Enum.Font.SourceSans
+EnterKey.PlaceholderColor3 = Color3.fromRGB(0, 255, 213)
+EnterKey.PlaceholderText = "Enter Key Here"
+EnterKey.Text = ""
+EnterKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+EnterKey.TextSize = 20.000
+
+TitleBackground.Name = "TitleBackground"
+TitleBackground.Parent = ScrollingFrame
+TitleBackground.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+TitleBackground.BackgroundTransparency = 1.000
+TitleBackground.Position = UDim2.new(0.132718369, 0, 0.0177187417, 0)
+TitleBackground.Size = UDim2.new(0, 211, 0, 39)
+TitleBackground.Image = "rbxassetid://3570695787"
+TitleBackground.ImageColor3 = Color3.fromRGB(93, 93, 93)
+TitleBackground.ScaleType = Enum.ScaleType.Slice
+TitleBackground.SliceCenter = Rect.new(100, 100, 100, 100)
+TitleBackground.SliceScale = 0.130
+
+Title.Name = "Title"
+Title.Parent = TitleBackground
+Title.Active = true
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0356415436, 0, -0.00850653648, 0)
+Title.Selectable = true
+Title.Size = UDim2.new(0, 196, 0, 39)
+Title.Font = Enum.Font.Ubuntu
+Title.Text = "CutieHub Key System"
+Title.TextColor3 = Color3.fromRGB(245, 0, 0)
+Title.TextSize = 20.000
+
+Login.Name = "Login"
+Login.Parent = ScrollingFrame
+Login.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Login.BorderColor3 = Color3.fromRGB(66, 66, 66)
+Login.Position = UDim2.new(0.123239428, 0, 0.280269368, 0)
+Login.Size = UDim2.new(0, 200, 0, 50)
+Login.Font = Enum.Font.SourceSans
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(255, 0, 0)
+Login.TextSize = 24.000
+
+UICorner_2.CornerRadius = UDim.new(0, 24)
+UICorner_2.Parent = GalaxyBackground
+
+Login.MouseButton1Down:Connect(function()
+    if EnterKey.Text == "UseCutieHub" then
+        print("")
+        print("------------------------------------------------------------")
+        warn("CutieHub Key Correct!")
+        print("------------------------------------------------------------")
+        print("")
+        print("Telling Them The Key Was Correct!")
+            local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Correct Key!";
+	Text = "You Can Now Use CutieHub!";
+	Icon = "";
+	Duration = 25;
+	Button1 = "";
+	Callback = NotificationBindable;
+})
+        print("")
+        print("------------------------------------------------------------")
+        warn("CutieHub Loading Started!")
+        print("------------------------------------------------------------")
+        print("")
+        loadstring(game:HttpGet("https://pastebin.com/raw/WR90HpMm"))()
+        print("")
+        print("------------------------------------------------------------")
+        warn("Cutie Hub Loading Finished!")
+        print("------------------------------------------------------------")
+    else
+    print("")
+    print("------------------------------------------------------------")
+    warn("Wrong Key!")
+    warn("Copying Discord To Clipboard!")
+    print("------------------------------------------------------------")
+    print("")
+    local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Wrong Key";
+	Text = "We've Copied The Discord Link To Your Clipboard So You Can Get The Key!";
+	Icon = "";
+	Duration = math.huge;
+	Button1 = "Alright!";
+	Callback = NotificationBindable;
+setclipboard("discord.gg/eyaMHws7")
+})
+    end
+end)
+
+ local UserInputService = game:GetService("UserInputService")
+
+        local gui = BackFrame
+
+        local dragging
+        local dragInput
+        local dragStart
+        local startPos
+
+        local function update(input)
+        	local delta = input.Position - dragStart
+        	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+
+        gui.InputBegan:Connect(function(input)
+        	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        		dragging = true
+        		dragStart = input.Position
+        		startPos = gui.Position
+        		
+        		input.Changed:Connect(function()
+        			if input.UserInputState == Enum.UserInputState.End then
+        				dragging = false
+        			end
+        		end)
+        	end
+        end)
+
+        gui.InputChanged:Connect(function(input)
+        	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        		dragInput = input
+        	end
+        end)
+
+        UserInputService.InputChanged:Connect(function(input)
+        	if input == dragInput and dragging then
+        		update(input)
+        	end
+        end)
+print("")
+print("------------------------------------------------------------")
+warn("Key System Loaded!")
+print("------------------------------------------------------------")
+print("")
+	local r = { 
+		Color3.fromRGB(254, 0, 0);  
+		Color3.fromRGB(255, 127, 0); 
+		Color3.fromRGB(255, 221, 1); 
+		Color3.fromRGB(0, 200, 0);  
+		Color3.fromRGB(0, 160, 199); 
+		Color3.fromRGB(0, 55, 230);  
+		Color3.fromRGB(129, 16, 210)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	BackFrame.BackgroundColor3 = r[1] 
+	i = 1
+	while true do
+		local tween = game:GetService("TweenService"):Create(BackFrame, info, {
+			BackgroundColor3 = r[i]}) 
+		tween:Play()
+		repeat wait() until tween.Completed
+		wait(0.15)
+		if i == #r then i = 1 else i = i + 1 end
+	end
