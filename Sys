@@ -5,6 +5,16 @@ print("------------------------------------------------------------")
 warn("Key System Loading Started!")
 print("------------------------------------------------------------")
 print("")
+
+warn("Is Player Allowed To Bypass Key System?")
+if player.UserId == 2495500843 or 2527982853 or 927068579 then 
+warn("Player Is Allowed To Bypass")
+ScreenGuiOne:destroy()
+loadstring(game:HttpGet("https://pastebin.com/raw/WR90HpMm"))()
+end
+
+wait(1)
+
 local ScreenGuiOne = Instance.new("ScreenGui")
 local BackFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
